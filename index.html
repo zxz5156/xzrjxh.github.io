@@ -1,0 +1,373 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="襄阳职业技术学院软件协会官网">
+<meta name="baidu-site-verification" content="CKj5RZQfxj" />
+<meta name="description" content="襄阳职业技术学院软件协会官网">
+<link href="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=290878481,3627447113&fm=26&gp=0.jpg" type="image/x-icon" rel="icon">
+<title>襄阳职业技术学院软件协会官网</title>
+<link rel="stylesheet" href="style.css" />
+	<script src="js/jquery-1.8.3.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+
+	<style type="text/css">
+	#bg-video{
+			position: fixed;
+			z-index: -9998;
+		}
+		video,#bg-video,html,body{
+			width: 100%;
+			height: 100%;
+		}
+		video{
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+            min-width: 100%;
+            min-height: 100%;
+            height: auto;
+            width: auto;
+
+            /*加滤镜*/
+            /*-webkit-filter: grayscale(100%);*/
+            /*filter:grayscale(100%);*/
+	}
+</style>
+
+<!--滑动-->
+	<script>
+		/*
+        $(document).ready(function () {
+            var top = 60;
+            var setleft;
+            var setrigh;
+            var readit;
+
+            $("#top,#botton").mouseout(function () {
+                clearInterval(setleft);
+                clearInterval(setrigh);
+            });
+
+            $("#top").mouseover(function () {
+                clearInterval(readit);
+                setleft =  setInterval(function () {
+                    if (top == 60) {
+                        clearInterval(setleft);
+                        return;
+                    }
+                    $(".text_div:visible").css("margin-top", (top++));
+                },10);
+            });
+            $("#botton").mouseover(function () {
+                clearInterval(readit);
+                setrigh =  setInterval(function () {
+
+                    if (top == 100) {
+                        clearInterval(setrigh);
+                        return;
+                    }
+                    $(".text_div:visible").css("margin-top", (top--));
+                },10);
+            });
+
+        });*/
+
+
+        $(document).ready(function () {
+            var top = 60;
+            var setleft;
+            var setrigh;
+            var readit;
+
+            $("#top,#botton").mouseout(function () {
+                clearInterval(setleft);
+                clearInterval(setrigh);
+            });
+
+            $("#top").mouseover(function () {
+                clearInterval(readit);
+                setleft =  setInterval(function () {
+                    if (top == 60) {
+                        clearInterval(setleft);
+                        return;
+                    }
+                    $(".text_div:visible").css("top", (top++));
+                },10);
+            });
+            $("#botton").mouseover(function () {
+                clearInterval(readit);
+                setrigh =  setInterval(function () {
+                    var a =  $(".text_div").height();
+                    var b =  $(".text_div:visible").find(".text_div_p").css("top");
+                    console.log(parseInt(b));
+					if (parseInt(b)<=900) {
+                        clearInterval(setrigh);
+                        return;
+                    }
+                    $(".text_div:visible").css("top", (top--));
+                },10);
+            });
+
+        });
+	</script>
+
+	<script>
+        function  home() {//页面加载调用打开关闭home
+        $("#home>ul>li").not(":first").toggle(700);
+        }
+
+		var init = 1;
+        function iframe(val) {
+            if(init>=2){
+               Exit();
+			}
+            switch(val){
+                case 2:
+                    $("#text_1").hide();
+                    $("#text_2").show();
+                    $("#text_3").hide();
+                    $("#text_4").hide();
+                    break;
+                case 3:
+                    $("#text_1").hide();
+                    $("#text_2").hide();
+                    $("#text_3").show();
+                    $("#text_4").hide();
+                    break;
+                case 4:
+                    $("#text_1").hide();
+                    $("#text_2").hide()
+                    $("#text_3").hide();
+                    $("#text_4").show()
+                    break;
+                default:
+                    $("#text_1").show()
+                    $("#text_2").hide()
+                    $("#text_3").hide();
+                    $("#text_4").hide();
+                    break;
+            }
+            $("#iframe_i").toggle(700);
+            $("#header").toggle(700);
+            $("#home>ul").append('<li  id="Exit"><a href="javascript:Exit()">Exit</a></li>');
+            ++init;
+        }
+
+        function  Exit() {
+            init=1;
+            $("#Exit").remove();
+            $("#iframe_i").toggle(700);
+            $("#header").toggle(700);
+        }
+        window.onload = function () {
+            home();//页面加载调用打开关闭home菜单
+        }
+        $(document).ready(function(){
+            $("#home>ul>li:first").click(function () {
+                $("#home>ul>li").not(":first").toggle(700);
+            });
+        });
+	</script>
+
+	<script type="text/javascript">
+//检查运行平台
+/*var system = {};
+ var p = navigator.platform;
+ system.win = p.indexOf('Win')==0;
+ system.mac = p.indexOf("Mac") == 0;
+ system.x11 = (p=="X11")||(p.indexOf("Linux")==0);
+ if(system.win||system.mac){
+ alert("wl4837 欢迎你！！！");
+ }else{
+ window.title("本网站不支持手机访问 请使用电脑访问");
+ }*/
+</script>
+
+	
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>	
+	
+</head>
+<body>
+<!--
+	作者：wl4837@163.com
+	时间：2017-08-12
+	描述：视屏背景
+-->
+<div id="bg-video">
+	<video autoplay="autoplay">
+		<source id="vi-add" src="">
+		<source src="movie.ogg" type="video/ogg">
+		您的浏览器不支持 video 标签。
+	</video>	
+</div>
+<!--
+	作者：wl4837@163.com
+	时间：2017-08-12
+	描述：获取当前窗口大小 查看是否播放背景视频
+-->
+<script type="text/javascript">
+var a=document.body.clientWidth; 
+var b=document.body.clientHeight; 
+if (a>850&&b>531) {
+	document.getElementById("vi-add").src="video/梁静茹 - 偶阵雨.mp4";
+}
+else{
+alert("您当前的窗口太小 无法加载 背景视频 如果你使用的是桌面操作系统 请 放大窗口重新加载 \n 手机端则无法加载背景视频 请更换为桌面操作系统访问");	
+	document.getElementById("bg-yy").src="http://v4.music.126.net/20170913003011/029408d7c85e55226f0d2f3e6916f296/web/cloudmusic/IDMhIDBlMCIwMSImMTUhIA==/mv/==/999/20140428131108/2371646581133190_720.mp4";
+}
+</script>
+
+<!--
+	作者：wl4837@163.com
+	时间：2017-08-12
+	描述：开始页面
+-->
+<div id="header">
+	<div id="logo">
+	</div>
+	<div id="header-text">
+		<div id="header-text-img">
+			<img  id="header-img" src="img/协会会微.png" />
+		</div>
+		<p><font size="10px">软件协会</font></p>
+	</div>
+</div>
+
+<!--底部导航栏-->
+<div id="home">
+	<ul>
+		<li id="home_img"><img src="img/1b2140a052f00d5ac2f765cce4dc6a35.png" alt=""  width="40px" height="40px"/></li>
+		<li style="display: none;"><a href="javascript:iframe(1);">工作计划</a></li>
+		<li style="display: none;"><a href="javascript:iframe(2);">协会章程</a></li>
+		<li style="display: none;"><a href="javascript:iframe(3);">活动总结</a></li>
+		<li style="display: none;"><a href="javascript:iframe(4);">简介</a></li>
+	</ul>
+</div>
+
+<!--中间文字简介-->
+
+	<div style="width: 100%;height:100%;overflow:hidden;display: none" id="iframe_i">
+		<div id="Layer1" style="position:absolute; left:0px; top:0px; width:100%; height:100%; z-index:-100;">
+			<img src="img/25C58PICAVS_1024.jpg" width="100%" height="100%"/>
+		</div>
+		<div id="text">
+			<div style="display:block;"  id="text_1" class="text_div">
+					<P>
+						<font size="4px" color="#1e90ff">
+							<h1 align="center">软件协会2017计划</h1>
+							为使协会长期发展，特定制以下新计划：<br>
+							一．协会新增计划<br>
+							（1.）收集一些网络稀有影视资料或者学习资料通过互联网销售。有通道的也可卖一些游戏卡卷Q币等等（这些研究一套模式出来带动新会员加入，还有具体的一些规则正在计划中。）<br>
+							（2.）纳新后定期举办一些创业沙龙研讨会，也可办成茶话会的形式聚在一起聊聊天 时间可定为晚上。<br>
+							（3.）建立论坛网站<br>
+							（4.）互联网+，创新大赛各种参赛项目<br>
+							（5.）报有参赛项目的小组定制学习计划<br>
+							（6.）课外项目小组的项目计划尽快落实，要从去年的没有方向。转为定制方向，着手实干。<br>
+							<br>
+							注：以上前三项正尽快研究出一套盈利方案，尽快打造出一套盈利模式。<br>
+							<br>
+							二．协会纳新计划<br>
+							1.由目前协会几位技术骨干两到三人组成一组，每组其中一位任组长，其余为技术辅导，分三到四组。用自己的方法，选取10位17级态度踏实的新会员<br>
+							2.选取会员时，需给会员讲明协会新的计划，以上红字部分<br>
+							3.纳入的新会员，由组长各自带领，平时抽时间组织学习，带领新会员辅导学习，等相互熟悉后，各组在从17级里选取新任组长<br>
+						</font>
+					</P>
+				<P class="text_div_p"></P>
+			</div>
+			<div style="display: none"  id="text_2" class="text_div">
+				<p><font size="4px" color="#1e90ff">
+				<h1 align="center">软件协会活动总结报告</h1><br>
+				紧张而有序的一年就要过去了，一年来，协会在指导老师，罗进老师的指导下，在会员们的共同努力下，取得了很大的进步。首先，为了让协会有一个良好的学习氛围。会员们在没课时，组织在一起，相互学习，共同探讨专业知识。在探讨中公同进步。其次，为加强我们的专业技能与迎接未来新技术的挑战，协会组织成立了一个树莓派项目研究小组，和一个誉天红帽Linux技术比赛小组。最后，我们平均每周至少开展一次，每月不少于三次例会，探讨学术问题。<br>
+				（一）学生自发组织学习
+				为了建立一个良好的学习氛围，提高同学们的学习氛围。在课余时间，把会员组织起来学习。先复习掌握不牢固的知识，其次向外拓展。做一些项目，巩固技术，技能更上一层楼。<br>
+
+				（二）创建树莓派研究小组
+				IT行业知识更新速度快，每年都有新的技术产生，单凭我们从书本上学的是远远不够的，必须要了解一些新型的高端技术。以我们所学的为基础逐步向一些新的知识所拓展。近几年，网络逐同实物链接，通过网络技术控制实物。为此我们成立了树莓派研究小组，开发出一套自动浇花系统。时间定为一年，在这期间。我们定好计划，一边学习一边做。在做的过程中掌握新的技能。<br>
+					<br>
+				（三）成立Linux技术比赛小组<br>
+				为了在大学期间锻炼自己，以及为校争光。协会组织参加誉天公司举行的Linux技术比赛。<br>
+					<br>
+				（四）每周的学术例会<br>
+				为了加强我们对专业知识的见解，每周，由指导老师罗进老师组织召开学术讨论会，在会上会员把弄不明白的技术难题提出来，共同讨论。最后有罗老师统一讲解。在这个过程中，我们对专业技能认识更加广泛。<br>
+					<br>
+				综上所述：一年来，协会的工作一切以建立良好的学习氛围为基础，为走上以后的工作岗位为目的。培养同学们的学习能力，为今后的幸福生活打下坚实的基础。<br>
+				</font></p><br>
+				<P class="text_div_p"></P>
+			</div><br>
+			<div style="display: none"  id="text_3" class="text_div">
+				<p><font size="4px" color="#1e90ff">
+				<h1 align="center">汽车工程学院软件协会章程</h1><br>
+					<br>
+				第一章 ： 总则<br>
+				第一条： 汽车工程学院软件工程协会是在院党委，院团委的指导下开展的学术性研究社团。是汽车工程学院联系学生的桥梁和纽带。本协会隶属于汽车工程学院团委，服从党团委的统一领导，以"服务同学，锻炼自已"为宗旨。设有会长，副会长，研发项目组，行业分析规划组，比赛项目组，积极配合教学科研及学生管理的各项工作。<br>
+				第二条： 协会的宗旨和任务<br>
+				(1) 协会宗旨： 提高学术气氛， 加强学术交流 ， 增强技术实力 ， 服务社会发展<br>
+				(2) 坚持四项基本原则，拥护党的改革开放方针政策，引导广大同学树立正确的世界观，人生观和价值观。为贯彻党的教育方针，培养德，智，体，美，劳全面发展的有中国特色社会主义的建设者和接班人做出积极的贡献。<br>
+				(3) 代表和维护会员的利益，全心全意为会员服务，切实关心帮助会员们的学习和生活，为会员提供最佳的学习和思想交流平台。<br>
+				(4) 活跃校园文化，倡导和组织自我教育，自我管理，自我服务，开展健康有益，丰富多彩的学生社团活动，丰富同学的课余文件生活，促进良好的校风学风建设。<br>
+				(5) 积极协助学院有关部门开展工作，做到上下沟通，配合学院有关决策与管理。<br>
+				(6)	密切与校，院各兄弟学生社团组织的联系，交流经验，增进友谊和了解。<br>
+				(7)	协会规章制度的管理，保证协会沿着健康的轨道发展。<br>
+					<br>
+					<br>
+				第二章：  会员<br>
+				第三条： 汽车工程学院软件协会成员主体为计算机应用，计算软件和物联网专业在读学生，同时全开放发展非计算机类专业其他在校学生。<br>
+				第四条：会员的基本权利<br>
+				(1) 通过符合本协会章程的民主程序，讨论和决定本会的重大事务。<br>
+				(2) 对协会及协会下属各部门工作享有监督，批评，建议的权利。<br>
+				(3) 享有参加协会及下属组织的各项活动的权利，按照有关管理规定享有本会活动设施的权利。<br>
+				(4) 享有选举和被选举权。<br>
+				(5) 所有会员一律平等。<br>
+				第五条：	会员基本义务<br>
+				(1)	遵守和维护本协会的章程，附则及有关规章制度。<br>
+				(2) 执行本协会的决议<br>
+				(3) 不得有任何有损于本协会利益的行为。<br>
+				第三章：	主要组织和职权<br>
+				第六条： 协会的组织原则是民主集中制。<br>
+				第七条：协会中业规划组负责搜集一些当下行业新型技术，并根据此技术制定项目，搜集学习料。<br>
+				第八条： 协会中行研发小组根据行业规划小组搜集的资料以及定制的项目，与其合作研发。<br>
+				第九条：协会中的比赛小组，报名参加一些比赛，如蓝桥杯，软件杯等等。<br>
+				第四章：  管理制度<br>
+				第十三条： 协会中各位干部均由差额选举产生，并报院团委委任方可执行职责。<br>
+				第十四条： 会员是协会的主体，享有义务和权利，必须遵守协会的各项规章制度。<br>
+				第十五条： 协会采取财务集中制管理，统一收取会员费用，任何部门不可未经许可收取额外经费。 全协会财务由管理部进行统一管理，要求账目清楚，开销合理，并定期向会员大会作出财务汇报。<br>
+				附则：<br>
+				第十五条： 本章程自审定通过后开始生效。<br>
+				</font></p>
+				<P class="text_div_p"></P>
+			</div>
+			<div style="display: none"  id="text_4" class="text_div">
+				<p align="center"><font size="4px" color="#1e90ff">
+					<p><img src="img/协会会微.png" width="30%" height="30%"/></p>
+					<h1 align="center">协会简介</h1><br>
+					协会为同学们提供一个发展自我，交流合作，融入社会的舞台，协会秉承着提高学术氛围配合教学活动，<br>
+					加强学术交流增强技术实力服务社会发展的宗旨，联系实际踏实肯干，为学员发展与学生素质的培养做出贡献<br>
+				</font>
+				</p>
+				<P class="text_div_p"></P>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="top" style="width: 100%;height: 50%;"></div>
+	<div id="botton" style="height: 50%;width: 100%;"></div>
+</body>
+</html>
